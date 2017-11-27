@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ADF-Project.iml" filepath="$PROJECT_DIR$/.idea/ADF-Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ADF-Final Project.iml" filepath="$PROJECT_DIR$/ADF-Final Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back-end/back-end.iml" filepath="$PROJECT_DIR$/back-end/back-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/front-end/front-end.iml" filepath="$PROJECT_DIR$/front-end/front-end.iml" />
     </modules>
   </component>
 </project>
