@@ -2,18 +2,19 @@ package entities;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 @Document
 public class Customer {
     @Id
+    @GeneratedValue
     int customerId;
     String name;
     String email;
     String phone;
     String address;
 
-    public Customer(int customerId, String name, String email, String phone, String address) {
-        this.customerId = customerId;
+    public Customer(String name, String email, String phone, String address) {
         this.name = name;
         this.email = email;
         this.phone = phone;

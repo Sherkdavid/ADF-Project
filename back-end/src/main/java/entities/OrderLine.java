@@ -4,22 +4,13 @@ import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 public class OrderLine {
-    int orderId;
+    //May replace with id referencing
     @DBRef
     Item item;
     int quantity;
-    public OrderLine(int orderId, Item item, int quantity) {
-        this.orderId = orderId;
+    public OrderLine(Item item, int quantity) {
         this.item = item;
         this.quantity = quantity;
-    }
-
-    public int getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(int orderId) {
-        this.orderId = orderId;
     }
 
     public Item getItem() {
