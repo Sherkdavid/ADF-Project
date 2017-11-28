@@ -1,13 +1,12 @@
-package entities;
+package shh4.adf.grp2.entities;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import org.springframework.data.annotation.Id;
 @Document
 public class Customer {
     @Id
-    @GeneratedValue
     int customerId;
     String name;
     String email;

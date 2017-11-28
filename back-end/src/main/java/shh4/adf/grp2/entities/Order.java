@@ -1,17 +1,13 @@
-package entities;
+package shh4.adf.grp2.entities;
 
 import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.springframework.data.annotation.Id;
 import java.util.ArrayList;
 import java.util.List;
 
-@Document
 public class Order {
     @Id
-    @GeneratedValue
     int orderId;
     //May replace this with id based referencing
     @DBRef

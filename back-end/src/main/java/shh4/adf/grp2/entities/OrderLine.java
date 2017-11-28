@@ -1,7 +1,6 @@
-package entities;
+package shh4.adf.grp2.entities;
 
 import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 public class OrderLine {
     //May replace with id referencing
