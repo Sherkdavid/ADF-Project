@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcfd4686-0a87-4a53-b27c-f1ef7694352e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Front-end/src/main/java/file" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-end/pom.xml" afterPath="$PROJECT_DIR$/Front-end/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/Grp2Application.java" afterPath="$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/Grp2Application.java" />
-    </list>
+    <list default="true" id="dcfd4686-0a87-4a53-b27c-f1ef7694352e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/front-end/target/" />
     <ignored path="$PROJECT_DIR$/back-end/target/" />
@@ -511,7 +504,7 @@
       <workItem from="1511807692903" duration="5194000" />
       <workItem from="1511815823527" duration="20586000" />
       <workItem from="1511881598050" duration="5100000" />
-      <workItem from="1512471285209" duration="4972000" />
+      <workItem from="1512471285209" duration="5448000" />
     </task>
     <servers />
   </component>
@@ -545,7 +538,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35852000" />
+    <option name="totallyTimeSpent" value="36328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
