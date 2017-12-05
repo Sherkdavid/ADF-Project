@@ -8,11 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="back-end" />
         <module name="front-end" />
+        <module name="grp2 (1) (shh4.adf)" />
+        <module name="grp2 (2) (sdh4.adf)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="back-end" target="1.8" />
       <module name="front-end" target="1.8" />
+      <module name="grp2 (1) (shh4.adf)" target="1.8" />
+      <module name="grp2 (2) (sdh4.adf)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

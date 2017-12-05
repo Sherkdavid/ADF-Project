@@ -8,5 +8,8 @@ public class Grp2Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Grp2Application.class, args);
+
+		System.out.print("Test");
 	}
+
 }
