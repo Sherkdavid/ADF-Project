@@ -1,11 +1,11 @@
-package shh4.adf.grp2.entities;
+package sdh4.adf.grp2f.entities;
 
 
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.GeneratedValue;
 
-public class Item {
+public class Item implements ApplicationRESTObject {
 
     @Id
     @GeneratedValue
