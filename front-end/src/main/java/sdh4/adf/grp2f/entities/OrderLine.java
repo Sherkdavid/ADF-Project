@@ -1,4 +1,4 @@
-package shh4.adf.grp2.entities;
+package sdh4.adf.grp2f.entities;
 
 import org.springframework.data.mongodb.core.mapping.DBRef;
 

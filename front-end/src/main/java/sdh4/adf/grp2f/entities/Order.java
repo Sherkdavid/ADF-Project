@@ -1,12 +1,12 @@
-package shh4.adf.grp2.entities;
-
-import org.springframework.data.mongodb.core.mapping.DBRef;
+package sdh4.adf.grp2f.entities;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Order {
+public class Order implements ApplicationRESTObject {
     @Id
     int orderId;
     //May replace this with id based referencing

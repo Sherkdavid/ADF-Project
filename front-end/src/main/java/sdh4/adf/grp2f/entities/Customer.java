@@ -1,11 +1,10 @@
-package shh4.adf.grp2.entities;
-
-import org.springframework.data.mongodb.core.mapping.Document;
-
+package sdh4.adf.grp2f.entities;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Document
-public class Customer {
+public class Customer implements ApplicationRESTObject {
     @Id
     int customerId;
     String name;

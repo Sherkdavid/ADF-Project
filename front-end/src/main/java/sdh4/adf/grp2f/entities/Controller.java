@@ -1,12 +1,10 @@
-package sdh4.adf.grp2.entities;
+package sdh4.adf.grp2f.entities;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
-import sdh4.adf.grp2.Repository.ItemRepository;
-import shh4.adf.grp2.entities.Item;
 
 import java.util.List;
 
@@ -35,7 +33,7 @@ class Controller{
     public String displayAll(Model model)
             {
             List<Item> p = itemRepository.findAll();
-            model.addAttribute("people", p);
+            model.addAttribute("people");
             return "displayAll";
             }
 
@@ -43,7 +41,7 @@ class Controller{
     public String showMyDetails(@PathVariable int id, Model model)
             {
             Item i = (Item) itemRepository.findOne((int) id);
-            model.addAttribute("person", i);
+            model.addAttribute("person", id);
             return "displayOne";
             }
 }
