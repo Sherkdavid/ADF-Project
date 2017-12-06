@@ -1,4 +1,4 @@
-package sdh4.adf.grp2;
+package sdh4.adf.grp2f;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

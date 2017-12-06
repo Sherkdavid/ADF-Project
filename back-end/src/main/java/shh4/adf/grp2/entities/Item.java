@@ -5,7 +5,7 @@ import org.springframework.data.annotation.Id;
 
 import javax.persistence.GeneratedValue;
 
-public class Item {
+public class Item implements ApplicationRESTObject {
 
     @Id
     @GeneratedValue

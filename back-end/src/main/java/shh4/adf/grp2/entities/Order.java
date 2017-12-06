@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Order {
+public class Order implements ApplicationRESTObject {
     @Id
     int orderId;
     //May replace this with id based referencing

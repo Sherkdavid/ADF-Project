@@ -1,4 +1,4 @@
-package sdh4.adf.grp2;
+package sdh4.adf.grp2f;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
