@@ -17,7 +17,11 @@ class Controller{
             {
             return "index";
             }
-
+    /*
+    * An example of using a path variable.
+    * localhost:8080/usingParameter?name=Cliona will add Cliona to the welcome
+    * localhost:8080/usingParameter uses the default value of To You!
+    */
     @GetMapping("/usingParameter")
     public String doWelcomeWithParams(@RequestParam(value="name", defaultValue="To You!")String name, Model model)
             {

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcfd4686-0a87-4a53-b27c-f1ef7694352e" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/OrderLine.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Front-end/src/main/resources/template/Parameter.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Front-end/src/main/resources/template/displayAll.html" afterPath="" />
@@ -44,6 +45,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Item.java" afterPath="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Order.java" afterPath="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Order.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/src/test/java/shh4/adf/grp2/Grp2ApplicationTests.java" afterPath="$PROJECT_DIR$/back-end/src/test/java/shh4/adf/grp2/Grp2ApplicationTests.java" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/pom.xml" afterPath="$PROJECT_DIR$/back-end/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Controller.java" afterPath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Customer.java" afterPath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Customer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Item.java" afterPath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Order.java" afterPath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/OrderLine.java" afterPath="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/OrderLine.java" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/front-end/target/" />
@@ -67,6 +77,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ItemController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/item/ItemController.java">
@@ -172,13 +183,203 @@
         </entry>
       </file>
     </leaf>
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Order.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Customer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Item.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataInput.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/DataInput.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MongoConfig.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/MongoConfig.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Controller.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-5">
+                  <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="OrderRepository.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/OrderRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ItemRepository.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/ItemRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CustomerRepository.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/CustomerRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="RestClient.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/RestClient.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RestClient.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/RestClient.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="493">
+                  <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Order.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Customer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ApplicationRESTObject.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/ApplicationRESTObject.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Item.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/back-end/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="OrderLine.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/OrderLine.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -193,6 +394,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/back-end/src/main/java/controller/RepositoryController.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/entities/Item.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/entities/Customer.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/entities/Order.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/repositories/CustomerRepository.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/controllers/RestController.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/controllers/RestAPIController.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/repositories/OrderRepository.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/repositories/ItemRepository.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/Grp2Application.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/OrderRepository.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/DataInsert.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/DataInsert.java" />
+        <option value="$PROJECT_DIR$/back-end/src/test/java/shh4/adf/grp2/Grp2ApplicationTests.java" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
         <option value="$PROJECT_DIR$/front-end/src/main/java/DataInput.java" />
         <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/DataInput.java" />
         <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/ItemRepository.java" />
@@ -231,6 +449,7 @@
         <option value="$PROJECT_DIR$/Front-end/src/main/resources/template/index.html" />
         <option value="$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/OrderLine.java" />
         <option value="$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/Controller.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/item/Item.java" />
         <option value="$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/item/Controller.java" />
         <option value="$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/item/ItemRepository.java" />
@@ -244,6 +463,27 @@
         <option value="$PROJECT_DIR$/Front-end/src/main/resources/report/dashboard.html" />
         <option value="$PROJECT_DIR$/Front-end/src/main/resources/template/item/create.html" />
         <option value="$PROJECT_DIR$/Front-end/src/main/resources/catalog.html" />
+=======
+        <option value="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2/entities/Item.java" />
+        <option value="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/OrderLine.java" />
+        <option value="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Order.java" />
+        <option value="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Customer.java" />
+        <option value="$PROJECT_DIR$/front-end/src/main/resources/template/displayOne.html" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/JSONObject.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Customer.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Item.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Order.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/APITool.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/RestClient.java" />
+        <option value="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/MongoConfig.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/DataInput.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/RestClient.java" />
+        <option value="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/RestClient.java" />
+        <option value="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Item.java" />
+        <option value="$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/MongoConfig.java" />
+        <option value="$PROJECT_DIR$/back-end/pom.xml" />
+        <option value="$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Controller.java" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
       </list>
     </option>
   </component>
@@ -284,17 +524,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+      <pane id="AndroidView" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
               <item name="back-end" type="462c0819:PsiDirectoryNode" />
@@ -364,20 +609,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="back-end" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
             </path>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="back-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="adf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="back-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -385,9 +635,9 @@
               <item name="grp2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="back-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -396,9 +646,9 @@
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="back-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -408,9 +658,9 @@
               <item name="customer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="back-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -420,14 +670,15 @@
               <item name="item" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="back-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="adf" type="462c0819:PsiDirectoryNode" />
               <item name="grp2" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="entities" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -438,30 +689,116 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
             </path>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="back-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ADF-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADF-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="grp2f" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="grp2f" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="item" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="grp2f" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,7 +816,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-mvc-app-master" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/front-end/src/main/java" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="settings.github" />
+=======
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -496,8 +836,11 @@
       <recent name="shh4.adf.grp2.repositories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\nvlas\IdeaProjects\ADF-Project\Front-end\src\main\java\sdh4\adf\grp2\entities\customer" />
       <recent name="C:\Users\nvlas\IdeaProjects\ADF-Project\Front-end\src\main\resources\app" />
+=======
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
       <recent name="C:\Users\nvlas\IdeaProjects\ADF-Project\Front-end\src\main\resources" />
     </key>
   </component>
@@ -711,7 +1054,10 @@
       <workItem from="1512471285209" duration="5448000" />
       <workItem from="1512526967211" duration="1639000" />
       <workItem from="1512580229498" duration="6304000" />
+<<<<<<< HEAD
       <workItem from="1512648632865" duration="1942000" />
+=======
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
     </task>
     <servers />
   </component>
@@ -745,27 +1091,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="54175000" />
+=======
+    <option name="totallyTimeSpent" value="44271000" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.2359375" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5421875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5421875" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08399366" sideWeight="0.7640625" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32661718" sideWeight="0.7640625" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26207906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -783,6 +1142,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -795,6 +1155,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5421875" order="0" side_tool="false" content_ui="combo" />
+=======
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32661718" sideWeight="0.7640625" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -877,6 +1239,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/Repository/OrderRepository.java" />
     <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/Repository/ItemRepository.java" />
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/resources/template/Parameter.html">
@@ -918,12 +1281,48 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/back-end/src/main/resources/application.properties">
+=======
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/controllers/RestMapping.java" />
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/controller/RepositoryController.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-rest-webmvc/2.6.8.RELEASE/spring-data-rest-webmvc-2.6.8.RELEASE.jar!/org/springframework/data/rest/webmvc/ProfileController.class" />
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/controllers/RestAPIController.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.8.RELEASE/spring-boot-autoconfigure-1.5.8.RELEASE.jar!/org/springframework/boot/autoconfigure/web/WebClientAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/.classpath" />
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/DataInsert.java" />
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2/InsertViaRest.java" />
+    <entry file="file://$PROJECT_DIR$/back-end/src/test/java/shh4/adf/grp2/Grp2ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/DataInput.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/client/RestTemplate.class" />
+    <entry file="file://$PROJECT_DIR$/Front-end/gittestfile" />
+    <entry file="file://$PROJECT_DIR$/front-end/.mvn/wrapper/maven-wrapper.properties">
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/ApplicationJSONObject.java" />
     <entry file="file://$PROJECT_DIR$/front-end/.classpath" />
     <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Item.java">
@@ -938,10 +1337,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/front-end/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/OrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -953,10 +1359,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/TodoList.java" />
+    <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/Grp2ApplicationUI.java" />
+    <entry file="file://$PROJECT_DIR$/back-end/grp2 (1) (shh4.adf).iml" />
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/Repository/OrderRepository.java" />
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/Repository/ItemRepository.java" />
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/resources/template/displayAll.html" />
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/resources/template/Parameter.html" />
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/file">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/Grp2Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/back-end/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-94">
@@ -983,34 +1410,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/resources/template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/OrderLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/test/java/sdh4/adf/grp2f/Grp2ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/Repository/CustomerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2f/entities/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/resources/template/displayOne.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2f/entities/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/Grp2Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2f/entities/OrderLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2f/entities/RestClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1032,10 +1510,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/ApplicationJSONObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/OrderLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/ApplicationRESTObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2f/entities/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1058,11 +1559,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-end/src/main/resources/app/app.js">
+=======
+    <entry file="file://$PROJECT_DIR$/front-end/.classpath">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1070,6 +1568,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Front-end/src/main/resources/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/resources/template/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1082,50 +1605,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/RestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/OrderLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/item/ItemRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/ApplicationRESTObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/order/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/order/OrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="68">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+=======
+        <state relative-caret-position="136">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/item/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/CustomerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/MongoConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1167,10 +1740,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/repositories/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/entities/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/customer/ArtistService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1183,10 +1771,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/DataInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/RestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/java/sdh4/adf/grp2/entities/customer/CustomerRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1234,10 +1839,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Front-end/src/main/resources/report/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1250,6 +1862,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+=======
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/shh4/adf/grp2/MongoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/main/java/sdh4/adf/grp2f/entities/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+>>>>>>> 085f828a1ea6a0e220ada237c55004d516d17842
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
