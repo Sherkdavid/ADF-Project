@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import org.springframework.data.annotation.Id;
 @Document
-public class Customer {
+public class Customer implements ApplicationRESTObject {
     @Id
     int customerId;
     String name;

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1 th:text="">Home</h1>
+
+<p th:text="'Hello, here are your options:'" style="font-weight:bold;">Options</p>
+
+<a href="/" th:href="@{/}"><span th:text="#{menu.home}">Home</span></a>
+
+<p sec:authorize="isAuthenticated()">
+    <a th:href="@{/artist/}" href="/artist/"><span th:text="#{menu.artists}">Artists</span></a>
+</p>
+
+<p sec:authorize="hasRole('ROLE_ADMIN')">
+    <a th:href="@{/report/dash}" href="/report/dash"><span th:text="#{menu.dashboard}">Dashboard</span></a><br/>
+    <a th:href="@{/report/audit}" href="/report/audit"><span th:text="#{menu.audittrail}">Audit Trail</span></a>
+</p>
+
+<p>Note that there are better ways of including a menu throughout your app using layouts: see <a href="http://www.thymeleaf.org/doc/articles/layouts.html">http://www.thymeleaf.org/doc/articles/layouts.html</a>
+</p>
+</body>
+</html>

@@ -1,8 +1,8 @@
-package sdh4.adf.grp2.Repository;
+package sdh4.adf.grp2.entities.order;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.query.Param;
-import shh4.adf.grp2.entities.Order;
+import sdh4.adf.grp2.entities.order.Order;
 
 import java.util.List;
 
