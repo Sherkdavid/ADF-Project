@@ -3,15 +3,17 @@ package sdh4.adf.grp2f.entities;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+import javax.persistence.GeneratedValue;
+
+@Document()
 public class Customer implements ApplicationRESTObject {
     @Id
-    int customerId;
-    String name;
+    @GeneratedValue
+    String id;
     String email;
     String phone;
+    String name;
     String address;
-
     public Customer() {
     }
 
@@ -22,12 +24,8 @@ public class Customer implements ApplicationRESTObject {
         this.address = address;
     }
 
-    public int getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
+    public String getId() {
+        return id;
     }
 
     public String getName() {

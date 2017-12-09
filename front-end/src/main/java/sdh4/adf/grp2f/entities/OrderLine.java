@@ -1,16 +1,13 @@
 package sdh4.adf.grp2f.entities;
 
-import org.springframework.data.mongodb.core.mapping.DBRef;
-
 public class OrderLine {
-    //May replace with id referencing
-    @DBRef
     Item item;
     int quantity;
     public OrderLine(Item item, int quantity) {
         this.item = item;
         this.quantity = quantity;
     }
+    public OrderLine(){}
 
     public Item getItem() {
         return item;

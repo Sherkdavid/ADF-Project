@@ -1,28 +1,33 @@
 package sdh4.adf.grp2f.entities;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import java.util.ArrayList;
 import java.util.List;
 
+@Document
 public class Order implements ApplicationRESTObject {
     @Id
-    int orderId;
-    //May replace this with id based referencing
-    @DBRef
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    String orderId;
+    @Field("customer")
     Customer customer;
+    @Field("inventory")
     List<OrderLine> orderLines;
     String status;
 
     public Order(){}
     public Order(Customer customer, String status) {
         this.customer = customer;
-        orderLines = new ArrayList<OrderLine>();
+        orderLines = new ArrayList<>();
         this.status = status;
     }
 
-    public int getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
@@ -32,6 +37,10 @@ public class Order implements ApplicationRESTObject {
 
     public String getStatus() {
         return status;
+    }
+
+    public Customer getCustomer() {
+        return customer;
     }
 
     public void setStatus(String status) {

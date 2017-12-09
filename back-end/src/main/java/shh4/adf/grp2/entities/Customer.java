@@ -1,18 +1,24 @@
 package shh4.adf.grp2.entities;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
 import org.springframework.data.annotation.Id;
-@Document
+
+import javax.persistence.GeneratedValue;
+import java.util.ArrayList;
+import java.util.List;
+
+@Document()
 public class Customer implements ApplicationRESTObject {
     @Id
-    int customerId;
-    String name;
+    @GeneratedValue
+    String id;
     String email;
     String phone;
+    String name;
     String address;
-
     public Customer() {
     }
 
@@ -23,12 +29,8 @@ public class Customer implements ApplicationRESTObject {
         this.address = address;
     }
 
-    public int getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
+    public String getId() {
+        return id;
     }
 
     public String getName() {
