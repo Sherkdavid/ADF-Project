@@ -1,15 +1,24 @@
 package shh4.adf.grp2.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonRootName;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
+@Document(collection = "items")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Item implements ApplicationRESTObject {
 
     @Id
-    @GeneratedValue
-    int item_id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    String itemId;
     String name;
     String description;
 
@@ -21,12 +30,8 @@ public class Item implements ApplicationRESTObject {
         this.description = description;
     }
 
-    public int getItem_id() {
-        return item_id;
-    }
-
-    public void setItem_id(int item_id) {
-        this.item_id = item_id;
+    public String getItemId() {
+        return itemId;
     }
 
     public String getName() {
