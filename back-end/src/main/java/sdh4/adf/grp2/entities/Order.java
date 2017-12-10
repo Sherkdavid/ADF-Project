@@ -1,4 +1,4 @@
-package shh4.adf.grp2.entities;
+package sdh4.adf.grp2.entities;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -17,10 +17,10 @@ public class Order implements ApplicationRESTObject {
     Customer customer;
     @Field("inventory")
     List<OrderLine> orderLines;
-    String status;
+    OrderStatus status;
 
     public Order(){}
-    public Order(Customer customer, String status) {
+    public Order(Customer customer, OrderStatus status) {
         this.customer = customer;
         orderLines = new ArrayList<>();
         this.status = status;
@@ -30,11 +30,27 @@ public class Order implements ApplicationRESTObject {
         return orderId;
     }
 
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public void setOrderLines(List<OrderLine> orderLines) {
+        this.orderLines = orderLines;
+    }
+
+    public String getId() {
+        return orderId;
+    }
+
     public List<OrderLine> getOrderLines() {
         return orderLines;
     }
 
-    public String getStatus() {
+    public OrderStatus getStatus() {
         return status;
     }
 
@@ -42,7 +58,7 @@ public class Order implements ApplicationRESTObject {
         return customer;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(OrderStatus status) {
         this.status = status;
     }
 }

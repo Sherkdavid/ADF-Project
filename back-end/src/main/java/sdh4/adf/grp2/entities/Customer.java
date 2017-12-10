@@ -1,19 +1,17 @@
-package shh4.adf.grp2.entities;
+package sdh4.adf.grp2.entities;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.GeneratedValue;
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.GenerationType;
 
 @Document()
 public class Customer implements ApplicationRESTObject {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     String id;
     String email;
     String phone;

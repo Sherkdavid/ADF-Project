@@ -1,14 +1,10 @@
-package shh4.adf.grp2.entities;
+package sdh4.adf.grp2.entities;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonRootName;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
@@ -21,7 +17,6 @@ public class Item implements ApplicationRESTObject {
     String itemId;
     String name;
     String description;
-
     public Item() {
     }
 
@@ -32,6 +27,18 @@ public class Item implements ApplicationRESTObject {
 
     public String getItemId() {
         return itemId;
+    }
+
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
+    }
+
+    public String getId() {
+        return itemId;
+    }
+
+    public void setId(String itemId) {
+        this.itemId = itemId;
     }
 
     public String getName() {
