@@ -7,7 +7,6 @@ import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
 import org.springframework.http.ResponseEntity;
 import sdh4.adf.grp2.entities.*;
 import sdh4.adf.grp2.rest.RestClient;
-import shh4.adf.grp2.entities.*;
 
 import java.util.List;
 
@@ -43,7 +42,8 @@ public class RestClientTests {
 	public void test02()
 	{
 		RestClient api = new RestClient("http://localhost:8080");
-		List list = api.getItems();
+		List<Item> list = api.getItems();
+		System.out.println(list);
 		assertFalse(list.isEmpty());
 		list = api.getOrders();
 		assertFalse(list.isEmpty());

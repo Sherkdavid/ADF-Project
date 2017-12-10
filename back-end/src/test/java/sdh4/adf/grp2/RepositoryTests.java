@@ -11,7 +11,6 @@ import sdh4.adf.grp2.entities.*;
 import sdh4.adf.grp2.repositories.CustomerRepository;
 import sdh4.adf.grp2.repositories.ItemRepository;
 import sdh4.adf.grp2.repositories.OrderRepository;
-import shh4.adf.grp2.entities.*;
 
 import java.util.List;
 
@@ -56,12 +55,11 @@ public class RepositoryTests {
         Order order = new Order(customer, OrderStatus.RECEIVED);
         order.getOrderLines().add(new OrderLine(daffodil,10));
         order.getOrderLines().add(new OrderLine(hyacinth,10));
+        List<Order> list = orderRepository.findByStatus(OrderStatus.RECEIVED);
         orderRepository.save(order);
-        List<Order> list = orderRepository.findByCustomer_Email("dmurphy10@mycit.ie");
         assertFalse(list.isEmpty());
         for(Order o: list)
             assertTrue(o.getCustomer().getName().equals("David"));
-        list = orderRepository.findByStatus(OrderStatus.RECEIVED);
         assertFalse(list.isEmpty());
         for(Order o: list)
             assertTrue(o.getCustomer().getName().equals("David"));

@@ -1,20 +1,22 @@
 package sdh4.adf.grp2.rest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.type.TypeFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import sdh4.adf.grp2.entities.ApplicationJSONObject;
 import sdh4.adf.grp2.entities.Customer;
 import sdh4.adf.grp2.entities.Item;
 import sdh4.adf.grp2.entities.Order;
 
+
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -56,21 +58,29 @@ public class RestClient {
         ResponseEntity<String> responseEntity = restTemplate.exchange(url + getExtension(object), HttpMethod.POST, entity, String.class);
         return responseEntity;
     }
-    public List getCustomers() {
-        ResponseEntity<HashMap> response = restTemplate.exchange(url + "/customers", HttpMethod.GET, null, HashMap.class);
-        return (List) ((HashMap) response.getBody().get("_embedded")).get("customers");
+    public List getCustomers() throws IOException {
+        ResponseEntity<String> response = restTemplate.exchange(url + "/customers", HttpMethod.GET, null, String.class);
+        JsonNode root = mapper.readTree(response.getBody());
+        JsonNode node = root.path("customers");
+        System.err.println(node.asText());
+        return mapper.readValue(node.asText(),new TypeReference<List<Order>>(){});
     }
 
-    public List getOrders() {
-        ResponseEntity<HashMap> response = restTemplate.exchange(url + "/orders", HttpMethod.GET, null, HashMap.class);
-        return (List) ((HashMap) response.getBody().get("_embedded")).get("orders");
+    public List getOrders() throws IOException {
+        ResponseEntity<String> response = restTemplate.exchange(url + "/orders", HttpMethod.GET, null, String.class);
+        JsonNode root = mapper.readTree(response.getBody());
+        JsonNode node = root.path("orders");
+        System.err.println(node.asText());
+        return mapper.readValue(node.asText(),new TypeReference<List<Order>>(){});
     }
 
-    public List getItems() {
-        ResponseEntity<HashMap> response = restTemplate.exchange(url + "/items", HttpMethod.GET, null, HashMap.class);
-
-        List<HashMap<String, String>> list = (List) ((HashMap) response.getBody().get("_embedded")).get("items");
-        return list;
+    public List getItems() throws IOException {
+        ResponseEntity<String> response = restTemplate.exchange(url + "/items", HttpMethod.GET, null, new ParameterizedTypeReference<String>() {
+        });
+        JsonNode root = mapper.readTree(response.getBody());
+        JsonNode node = root.path("items");
+        System.err.println(node.asText());
+        return mapper.readValue(node.asText(),new TypeReference<List<Item>>(){});
     }
 
     public Customer findCustomerByName(String name) throws IOException {
@@ -98,9 +108,10 @@ public class RestClient {
         return response.getStatusCode().is2xxSuccessful();
     }
 
-    public Order findOrderByCustomer_Email(String email) throws IOException {
+    public List<Order> findOrdersByCustomer_Email(String email) throws IOException {
         ResponseEntity<String> response = restTemplate.exchange(url+"/orders/search/findByCustomer_Email?email=" + email, HttpMethod.GET,null,String.class);
-        return mapper.readValue(response.getBody(), Order.class);
-    }
-
+        JsonNode root = mapper.readTree(response.getBody());
+        JsonNode node = root.path("orders");
+        System.err.println(node.asText());
+        return mapper.readValue(node.asText(),new TypeReference<List<Order>>(){});    }
 }

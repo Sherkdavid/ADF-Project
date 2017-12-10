@@ -9,7 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Document()
-public class Customer implements ApplicationRESTObject {
+public class Customer implements ApplicationJSONObject {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     String id;

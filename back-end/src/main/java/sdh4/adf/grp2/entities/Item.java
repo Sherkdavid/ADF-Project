@@ -10,7 +10,7 @@ import javax.persistence.GenerationType;
 
 @Document(collection = "items")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Item implements ApplicationRESTObject {
+public class Item implements ApplicationJSONObject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

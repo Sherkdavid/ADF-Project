@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import java.util.ArrayList;
 import java.util.List;
 @Document
-public class Order implements ApplicationRESTObject {
+public class Order implements ApplicationJSONObject {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     String orderId;
