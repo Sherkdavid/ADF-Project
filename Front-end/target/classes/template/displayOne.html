@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="../static/styles.css"
+          th:href="@{/styles.css}" />
+</head>
+<body>
+<h1 th:text="${item.item_id}">Person's ID</h1>
+<h1 th:text="${item.name}">Person's Name</h1>
+<h1 th:text="${item.description}">Person's Name</h1>
+</body>
+</html>
