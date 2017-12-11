@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import sdh4.adf.grp2.entities.*;
 import sdh4.adf.grp2.rest.RestClient;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -24,8 +25,8 @@ public class RestClientTests {
 		Customer customer = new Customer("David","dmurphy10@mycit.ie","0892052849","Sherkin Island");
 		ResponseEntity<String> response  = api.insert(customer);
 		assertTrue(response.getStatusCode().is2xxSuccessful());
-		Item daffodil = new Item("Daffodil","Yellow flower");
-		Item hyacinth = new Item("Hyacinth","Sounds like a pokemon");
+		Item daffodil = new Item("Daffodil","Yellow flower",0.8);
+		Item hyacinth = new Item("Hyacinth","Sounds like a pokemon",1.0);
 		response = api.insert(daffodil);
 		assertTrue(response.getStatusCode().is2xxSuccessful());
 
@@ -39,16 +40,18 @@ public class RestClientTests {
 		assertTrue(response.getStatusCode().is2xxSuccessful());
 	}
 	@Test /** GETS **/
-	public void test02()
-	{
+	public void test02() throws IOException {
 		RestClient api = new RestClient("http://localhost:8080");
-		List<Item> list = api.getItems();
-		System.out.println(list);
-		assertFalse(list.isEmpty());
+		List<Item> items = api.getItems();
+		for(Item i: items)
+			System.out.println(i.getName());
+		assertFalse(items.isEmpty());
+		List list = null;
 		list = api.getOrders();
 		assertFalse(list.isEmpty());
 		list = api.getCustomers();
 		assertFalse(list.isEmpty());
+		System.out.println(api.getOrders().get(0).getCustomer().getName());
 	}
 
 }

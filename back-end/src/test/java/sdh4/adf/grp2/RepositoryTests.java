@@ -31,7 +31,7 @@ public class RepositoryTests {
     /** Mongo Repositories **/
     public void test01() //Test insert and retrieval of item
     {
-        itemRepository.save(new Item("Rose","Fierce romantic flower altogether this one"));
+        itemRepository.save(new Item("Rose","Fierce romantic flower altogether this one",1.5));
         assertTrue(itemRepository.findItemByName("Rose").getDescription().equals("Fierce romantic flower altogether this one"));
         assertTrue(itemRepository.findItemByDescription("Fierce romantic flower altogether this one").getName().equals("Rose"));
     }
@@ -49,8 +49,8 @@ public class RepositoryTests {
     @Test //Test insert and retrieval of order
     public void test03()
     {
-        Item daffodil = new Item("Daffodil","Yellow flower");
-        Item hyacinth = new Item("Hyacinth","Sounds like a pokemon");
+        Item daffodil = new Item("Daffodil","Yellow flower",1.5);
+        Item hyacinth = new Item("Hyacinth","Sounds like a pokemon",1.5);
         Customer customer = new Customer("David","dmurphy10@mycit.ie","0892052849","Sherkin Island");
         Order order = new Order(customer, OrderStatus.RECEIVED);
         order.getOrderLines().add(new OrderLine(daffodil,10));

@@ -1,10 +1,12 @@
 package sdh4.adf.grp2.rest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.hateoas.client.Traverson;
 import org.springframework.http.*;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -17,6 +19,7 @@ import sdh4.adf.grp2.entities.Order;
 
 
 import java.io.IOException;
+import java.net.URI;
 import java.util.HashMap;
 import java.util.List;
 
@@ -32,6 +35,9 @@ public class RestClient {
     public RestClient(String url) {
         this.url = url;
         mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.UNWRAP_SINGLE_VALUE_ARRAYS,true);
+        mapper.getDeserializationConfig();
+        mapper.configure(DeserializationFeature.UNWRAP_ROOT_VALUE,true);
         restTemplate = new RestTemplate();
         restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
         restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
@@ -79,7 +85,6 @@ public class RestClient {
         });
         JsonNode root = mapper.readTree(response.getBody());
         JsonNode node = root.path("items");
-        System.err.println(node.asText());
         return mapper.readValue(node.asText(),new TypeReference<List<Item>>(){});
     }
 

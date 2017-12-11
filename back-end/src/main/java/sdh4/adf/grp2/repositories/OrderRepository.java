@@ -1,5 +1,6 @@
 package sdh4.adf.grp2.repositories;
 
+        import org.springframework.data.rest.core.annotation.RepositoryRestResource;
         import sdh4.adf.grp2.entities.Order;
         import org.springframework.data.mongodb.repository.MongoRepository;
         import org.springframework.data.repository.query.Param;
@@ -9,6 +10,7 @@ package sdh4.adf.grp2.repositories;
 /**
  * Exposes http://{ip}/order Rest interface
  */
+@RepositoryRestResource(collectionResourceRel = "orders", path="orders")
 public interface OrderRepository extends MongoRepository<Order, String> {
         List<Order> findByCustomer_Email(@Param("email") String email);
         List<Order> findByStatus(@Param("status") OrderStatus status);

@@ -1,5 +1,6 @@
 package sdh4.adf.grp2.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
@@ -9,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Document()
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Customer implements ApplicationJSONObject {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

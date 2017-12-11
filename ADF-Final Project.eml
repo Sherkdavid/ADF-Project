@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/ADF-Final Project"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="Maven: org.springframework:spring-core:4.3.12.RELEASE" value="project"/>
+		<level name="Maven: org.springframework.data:spring-data-jpa:1.11.8.RELEASE" value="project"/>
+	</levels>
+</component>
