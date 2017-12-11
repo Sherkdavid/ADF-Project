@@ -51,7 +51,7 @@ public class RestClientTests {
 		assertFalse(list.isEmpty());
 		list = api.getCustomers();
 		assertFalse(list.isEmpty());
-		System.out.println(api.getOrders().get(0).getCustomer().getName());
+		System.out.println(api.findOrderByCustomer_Email("dmurphy10@mycit.ie").get(0).getStatus());
 	}
 
 }

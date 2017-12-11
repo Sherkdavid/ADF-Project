@@ -55,8 +55,8 @@ public class RepositoryTests {
         Order order = new Order(customer, OrderStatus.RECEIVED);
         order.getOrderLines().add(new OrderLine(daffodil,10));
         order.getOrderLines().add(new OrderLine(hyacinth,10));
-        List<Order> list = orderRepository.findByStatus(OrderStatus.RECEIVED);
         orderRepository.save(order);
+        List<Order> list = orderRepository.findByStatus(OrderStatus.RECEIVED);
         assertFalse(list.isEmpty());
         for(Order o: list)
             assertTrue(o.getCustomer().getName().equals("David"));

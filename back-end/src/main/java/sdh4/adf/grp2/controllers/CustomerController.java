@@ -3,6 +3,7 @@ package sdh4.adf.grp2.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import sdh4.adf.grp2.entities.Customer;
 import sdh4.adf.grp2.repositories.CustomerRepository;
@@ -15,10 +16,10 @@ public class CustomerController {
 
     @Autowired
     CustomerRepository customerRepository;
-    @RequestMapping("/all")
+    @RequestMapping(value = "/all",method = RequestMethod.GET)
     public List<Customer> findAll(){ return customerRepository.findAll(); }
 
-    @RequestMapping("/findByName/{name}")
+    @RequestMapping(value = "/findByName/{name}", method = RequestMethod.GET )
     public Customer findByName(@PathVariable String name)
     {
         return customerRepository.findCustomerByName(name);
