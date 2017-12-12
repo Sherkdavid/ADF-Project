@@ -1,27 +1,25 @@
 package sdh4.adf.grp2.rest;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.hateoas.client.Traverson;
-import org.springframework.http.*;
+import org.springframework.hateoas.MediaTypes;
+import org.springframework.hateoas.hal.Jackson2HalModule;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import sdh4.adf.grp2.entities.ApplicationJSONObject;
-import sdh4.adf.grp2.entities.Customer;
-import sdh4.adf.grp2.entities.Item;
-import sdh4.adf.grp2.entities.Order;
+import sdh4.adf.grp2.entities.*;
 
-
-import java.io.IOException;
-import java.net.URI;
-import java.util.HashMap;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Endpoint for client interfacing with REST API
@@ -30,17 +28,29 @@ public class RestClient {
     @Autowired
     RestTemplate restTemplate;
     String url;
-    ObjectMapper mapper;
 
     public RestClient(String url) {
         this.url = url;
-        mapper = new ObjectMapper();
-        mapper.configure(DeserializationFeature.UNWRAP_SINGLE_VALUE_ARRAYS,true);
-        mapper.getDeserializationConfig();
-        mapper.configure(DeserializationFeature.UNWRAP_ROOT_VALUE,true);
-        restTemplate = new RestTemplate();
-        restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
-        restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
+        restTemplate = getRestTemplate();
+    }
+
+    private RestTemplate getRestTemplate() {
+        RestTemplate template = new RestTemplate();
+
+        List<HttpMessageConverter<?>> converters = new ArrayList<HttpMessageConverter<?>>();
+        converters.add(new StringHttpMessageConverter(Charset.forName("UTF-8")));
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.registerModule(new Jackson2HalModule());
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        MappingJackson2HttpMessageConverter halConverter = new MappingJackson2HttpMessageConverter();
+        halConverter.setObjectMapper(mapper);
+        halConverter.setSupportedMediaTypes(Arrays.asList(MediaTypes.HAL_JSON));
+        converters.add(halConverter);
+
+        template.setMessageConverters(converters);
+
+        return template;
     }
 
     public String getExtension(ApplicationJSONObject object) {
@@ -55,7 +65,7 @@ public class RestClient {
 
     public HttpHeaders getJSONHeader() {
         HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.valueOf("application/x-spring-data-verbose+json"));
+        headers.setContentType(MediaTypes.HAL_JSON);
         return headers;
     }
 
@@ -64,59 +74,66 @@ public class RestClient {
         ResponseEntity<String> responseEntity = restTemplate.exchange(url + getExtension(object), HttpMethod.POST, entity, String.class);
         return responseEntity;
     }
-    public List getCustomers() throws IOException {
-        ResponseEntity<String> response = restTemplate.exchange(url + "/customers", HttpMethod.GET, null, String.class);
-        JsonNode root = mapper.readTree(response.getBody());
-        JsonNode node = root.path("customers");
-        System.err.println(node.asText());
-        return mapper.readValue(node.asText(),new TypeReference<List<Order>>(){});
+
+    public List getCustomers() {
+        return Arrays.stream(restTemplate.getForObject(url+"customers/all",Customer[].class)).collect(Collectors.toList());
     }
 
-    public List getOrders() throws IOException {
-        ResponseEntity<String> response = restTemplate.exchange(url + "/orders", HttpMethod.GET, null, String.class);
-        JsonNode root = mapper.readTree(response.getBody());
-        JsonNode node = root.path("orders");
-        System.err.println(node.asText());
-        return mapper.readValue(node.asText(),new TypeReference<List<Order>>(){});
+    public List<Order> getOrders() {
+        return Arrays.stream(restTemplate.getForObject(url+"orders/all",Order[].class)).collect(Collectors.toList());
     }
 
-    public List getItems() throws IOException {
-        ResponseEntity<String> response = restTemplate.exchange(url + "/items", HttpMethod.GET, null, new ParameterizedTypeReference<String>() {
-        });
-        JsonNode root = mapper.readTree(response.getBody());
-        JsonNode node = root.path("items");
-        return mapper.readValue(node.asText(),new TypeReference<List<Item>>(){});
+    public List<Item> getItems() {
+
+       return Arrays.stream(restTemplate.getForObject(url+"items/all",Item[].class)).collect(Collectors.toList());
     }
 
-    public Customer findCustomerByName(String name) throws IOException {
-        ResponseEntity<String> response = restTemplate.exchange(url+"/customers/search/findByName?name=" + name, HttpMethod.GET,null,String.class);
-
-        return mapper.readValue(response.getBody().toString(),Customer.class);
+    public Customer findCustomerByName(String name) {
+        return restTemplate.getForObject(url+"customers/findByName/{name}/",Customer.class,name);
     }
-    public Customer findCustomerByEmail(String email) throws IOException {
-        ResponseEntity<String> response = restTemplate.exchange(url+"/customers/search/findByName?email=" + email, HttpMethod.GET,null,String.class);
-
-        return mapper.readValue(response.getBody().toString(),Customer.class);
+    public Customer findCustomerByEmail(String email) {
+        return restTemplate.getForObject(url+"customers/findByEmail{email}/",Customer.class,email);
     }
-    public Customer findCustomerByPhone(String phone) throws IOException {
-        ResponseEntity<String> response = restTemplate.exchange(url+"/customers/search/findByName?phone=" + phone, HttpMethod.GET,null,String.class);
-        return mapper.readValue(response.getBody().toString(),Customer.class);
+    public Customer findCustomerByPhone(String phone) {
+        return restTemplate.getForObject(url+"customers/findByPhone?{phone}/",Customer.class,phone);
     }
-    public Customer findCustomerByAddress(String address) throws IOException {
-        ResponseEntity<Customer> response = restTemplate.exchange(url+"/customers/search/findByName?address=" + address, HttpMethod.GET,null,Customer.class);
-
-        return mapper.readValue(response.getBody().toString(),Customer.class);
+    public Customer findCustomerByAddress(String address) {
+        return restTemplate.getForObject(url+"customers/findByAddress{address}/",Customer.class,address);
     }
-    public boolean deleteCustomerByEmail(String email) throws IOException {
-        ResponseEntity<String> response = restTemplate.exchange(url+"/customers/search/deleteByEmail?email=" + email, HttpMethod.DELETE,null,String.class);
-
-        return response.getStatusCode().is2xxSuccessful();
+    public void deleteCustomerByEmail(String email) {
+        restTemplate.delete(url+"/customers/search/deleteByEmail/{email}/",email);
     }
 
-    public List<Order> findOrdersByCustomer_Email(String email) throws IOException {
-        ResponseEntity<String> response = restTemplate.exchange(url+"/orders/search/findByCustomer_Email?email=" + email, HttpMethod.GET,null,String.class);
-        JsonNode root = mapper.readTree(response.getBody());
-        JsonNode node = root.path("orders");
-        System.err.println(node.asText());
-        return mapper.readValue(node.asText(),new TypeReference<List<Order>>(){});    }
+    public List<Order> findOrderByCustomer_Email(String email) {
+        return Arrays.stream(restTemplate.getForObject(url+"/orders/findByEmail/{email}/",Order[].class,email)).collect(Collectors.toList());
+    }
+
+    public List<Order> findOrderByCustomer_Address(String address){
+        return Arrays.stream(restTemplate.getForObject(url+"orders/findByAddress/{address}/",Order[].class,address)).collect(Collectors.toList());
+    }
+    public List<Order> findOrderByStatus(OrderStatus status){
+        return Arrays.stream(restTemplate.getForObject(url+"orders/findByStatus/{status}/",Order[].class,status)).collect(Collectors.toList());
+    }
+    public void deleteOrderByEmail(String email){
+        restTemplate.delete(url+"/orders/deleteByEmail/{email}/",email);
+    }
+    public void deleteOrderByStatus(OrderStatus status){
+        restTemplate.delete(url+"/customers/search/deleteByStatus/{status}/",status);
+    }
+
+    public Item findItemByName(String name)
+    {
+        return restTemplate.getForObject(url+"items/findByName/{name}/",Item.class,name);
+    }
+
+    public Item findItemByDescription(String description)
+    {
+        return restTemplate.getForObject(url+"items/findByDescription/{description}/",Item.class,description);
+    }
+    public void deleteItemByName(String name)
+    {
+        restTemplate.delete(url+"/orders/deleteByName/{name}/", name);
+    }
+
+
 }

@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
-import org.springframework.hateoas.ResourceSupport;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,18 +11,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Document
-@JsonIgnoreProperties(ignoreUnknown = true,value = "_embedded")
-public class Order extends ResourceSupport implements ApplicationJSONObject {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Order implements ApplicationJSONObject {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     String orderId;
     @Field("customer")
     Customer customer;
-    @Field("inventory")
     List<OrderLine> orderLines;
     OrderStatus status;
 
-    public Order(){}
+    public Order(){
+        orderLines=new ArrayList<>();
+    }
     public Order(Customer customer, OrderStatus status) {
         this.customer = customer;
         orderLines = new ArrayList<>();
@@ -44,6 +44,10 @@ public class Order extends ResourceSupport implements ApplicationJSONObject {
 
     public void setOrderLines(List<OrderLine> orderLines) {
         this.orderLines = orderLines;
+    }
+
+    public String getId() {
+        return orderId;
     }
 
     public List<OrderLine> getOrderLines() {

@@ -4,14 +4,13 @@ package sdh4.adf.grp2.entities;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.hateoas.ResourceSupport;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Document(collection = "items")
-@JsonIgnoreProperties(ignoreUnknown = true,value = "_embedded")
-public class Item extends ResourceSupport implements ApplicationJSONObject {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Item implements ApplicationJSONObject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -44,6 +43,9 @@ public class Item extends ResourceSupport implements ApplicationJSONObject {
         this.itemId = itemId;
     }
 
+    public String getId() {
+        return itemId;
+    }
 
     public void setId(String itemId) {
         this.itemId = itemId;

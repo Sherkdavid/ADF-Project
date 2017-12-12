@@ -13,6 +13,12 @@ public class MongoConfig {
     private static final String MONGO_DB_URL = "localhost";
     private static final String MONGO_DB_NAME = "embeded_db";
 
+    /**
+     * Part of an experiment in authenticating with mongodb but ended up scrapping it
+     * and staying with in memory
+     * @return
+     * @throws IOException
+     */
     @Bean
     public MongoTemplate mongoTemplate() throws IOException {
         EmbeddedMongoFactoryBean mongo = new EmbeddedMongoFactoryBean();

@@ -3,14 +3,13 @@ package sdh4.adf.grp2.entities;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.hateoas.ResourceSupport;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Document()
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Customer extends ResourceSupport implements ApplicationJSONObject {
+public class Customer implements ApplicationJSONObject {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     String id;
@@ -26,6 +25,10 @@ public class Customer extends ResourceSupport implements ApplicationJSONObject {
         this.email = email;
         this.phone = phone;
         this.address = address;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getName() {

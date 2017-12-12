@@ -5,7 +5,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 
 import java.util.Collection;
-//Todo partial attempt to integrate Mongo into auth
+
+/**
+ * Part of the attempt to use mongo for auth, scrapped but would implement via UserDetails
+ * and UserDetailsService in future
+ */
 public class MongoUserDetails implements UserDetails {
 
     private User user;

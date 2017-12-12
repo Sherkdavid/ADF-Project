@@ -18,11 +18,12 @@ public class Order implements ApplicationJSONObject {
     String orderId;
     @Field("customer")
     Customer customer;
-    @Field("inventory")
     List<OrderLine> orderLines;
     OrderStatus status;
 
-    public Order(){}
+    public Order(){
+        orderLines=new ArrayList<>();
+    }
     public Order(Customer customer, OrderStatus status) {
         this.customer = customer;
         orderLines = new ArrayList<>();

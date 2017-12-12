@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Thymeleaf + Spring Security</title>
+
+    <div th:replace="fragments/header :: header-css"/>
+
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+
+    <div class="starter-template">
+        <form th:action="@{/order}" th:object="${order}" method="post">
+            <h3>Customer Details</h3>
+            <input type="text" placeholder="Name" th:field="*{customer.name}"/>
+            <br/>
+            <input type="text" placeholder="Phone Number" th:field="*{customer.phone}"/>
+            <br/>
+            <input type="text" placeholder="Email" th::field="*{customer.email}"/>
+            <br/>
+            <textarea placeholder="Address" th:field="*{customer.address}"/>
+            <th:block th:each="orderLine,status : *{orderLines}">
+                <h3 th:inline="text">[[${orderLine.item.name}]]</h3>
+                <h4 th:inline="text">[[${orderLine.item.description}]]</h4>
+                <input type="number" placeholder="Quantity" th:field="*{orderLines[__${status.index}__].quantity}"/>
+            </th:block>
+            <input type="submit"/>
+        </form>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>
