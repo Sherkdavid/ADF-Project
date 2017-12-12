@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ADF-Final Project.iml" filepath="$PROJECT_DIR$/ADF-Final Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/back-end/back-end.iml" filepath="$PROJECT_DIR$/back-end/back-end.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Front-end/grp2 (2) (sdh4.adf).iml" filepath="$PROJECT_DIR$/Front-end/grp2 (2) (sdh4.adf).iml" />
-      <module fileurl="file://$PROJECT_DIR$/front-end/front-end.iml" filepath="$PROJECT_DIR$/front-end/front-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Front-end/front-end.iml" filepath="$PROJECT_DIR$/Front-end/front-end.iml" />
       <module fileurl="file://$PROJECT_DIR$/back-end/grp2 (1) (shh4.adf).iml" filepath="$PROJECT_DIR$/back-end/grp2 (1) (shh4.adf).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Front-end/grp2 (2) (sdh4.adf).iml" filepath="$PROJECT_DIR$/Front-end/grp2 (2) (sdh4.adf).iml" />
     </modules>
   </component>
 </project>
