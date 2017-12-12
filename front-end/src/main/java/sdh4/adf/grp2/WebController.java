@@ -35,4 +35,11 @@ public class WebController {
         rest.insert(order);
         return "result";
     }
+    @RequestMapping(value = "/dashboard", method=RequestMethod.GET)
+    public String getOrderCount(Model model)
+    {
+        List<Order> orders = rest.getOrders();
+        model.addAttribute("total_orders",orders.size());
+        return "dashboard";
+    }
 }

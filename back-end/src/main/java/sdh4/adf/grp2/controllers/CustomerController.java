@@ -24,23 +24,23 @@ public class CustomerController {
     {
         return customerRepository.findCustomerByName(name);
     }
-    @RequestMapping("/findByEmail/{email}")
+    @RequestMapping(value = "/findByEmail/{email}", method = RequestMethod.GET)
     public Customer findByEmail(@PathVariable String email)
     {
         return customerRepository.findCustomerByEmail(email);
     }
-    @RequestMapping("/findByAddress/{address}")
+    @RequestMapping(value = "/findByAddress/{address}", method = RequestMethod.GET)
     public Customer findByAddress(@PathVariable String address)
     {
         return customerRepository.findByAddress(address);
     }
-    @RequestMapping("/findByPhone/{phone}")
+    @RequestMapping(value = "/findByPhone/{phone}", method = RequestMethod.GET)
     public Customer findByPhone(@PathVariable String phone)
     {
         return customerRepository.findByPhone(phone);
     }
 
-    @RequestMapping("/deleteByEmail/{email}")
+    @RequestMapping(value = "/deleteByEmail/{email}", method = RequestMethod.DELETE)
     public void deleteByEmail(@PathVariable String email)
     {
         customerRepository.deleteByEmail(email);

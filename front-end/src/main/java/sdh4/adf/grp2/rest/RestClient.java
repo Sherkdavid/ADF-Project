@@ -92,7 +92,7 @@ public class RestClient {
         return restTemplate.getForObject(url+"customers/findByName/{name}/",Customer.class,name);
     }
     public Customer findCustomerByEmail(String email) {
-        return restTemplate.getForObject(url+"customers/findByEmail{email}/",Customer.class,email);
+        return restTemplate.getForObject(url+"customers/findByEmail/{email}/",Customer.class,email);
     }
     public Customer findCustomerByPhone(String phone) {
         return restTemplate.getForObject(url+"customers/findByPhone?{phone}/",Customer.class,phone);
@@ -101,11 +101,11 @@ public class RestClient {
         return restTemplate.getForObject(url+"customers/findByAddress{address}/",Customer.class,address);
     }
     public void deleteCustomerByEmail(String email) {
-        restTemplate.delete(url+"/customers/search/deleteByEmail/{email}/",email);
+        restTemplate.delete(url+"customers/deleteByEmail/{email}/",email);
     }
 
     public List<Order> findOrderByCustomer_Email(String email) {
-        return Arrays.stream(restTemplate.getForObject(url+"/orders/findByEmail/{email}/",Order[].class,email)).collect(Collectors.toList());
+        return Arrays.stream(restTemplate.getForObject(url+"orders/findByEmail/{email}/",Order[].class,email)).collect(Collectors.toList());
     }
 
     public List<Order> findOrderByCustomer_Address(String address){
@@ -115,10 +115,10 @@ public class RestClient {
         return Arrays.stream(restTemplate.getForObject(url+"orders/findByStatus/{status}/",Order[].class,status)).collect(Collectors.toList());
     }
     public void deleteOrderByEmail(String email){
-        restTemplate.delete(url+"/orders/deleteByEmail/{email}/",email);
+        restTemplate.delete(url+"orders/deleteByEmail/{email}/",email);
     }
     public void deleteOrderByStatus(OrderStatus status){
-        restTemplate.delete(url+"/customers/search/deleteByStatus/{status}/",status);
+        restTemplate.delete(url+"orders/deleteByStatus/{status}/",status);
     }
 
     public Item findItemByName(String name)
@@ -132,7 +132,7 @@ public class RestClient {
     }
     public void deleteItemByName(String name)
     {
-        restTemplate.delete(url+"/orders/deleteByName/{name}/", name);
+        restTemplate.delete(url+"items/deleteByName/{name}/", name);
     }
 
 

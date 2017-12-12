@@ -42,16 +42,30 @@ public class RestClientTests {
 	@Test /** GETS **/
 	public void test02() throws IOException {
 		RestClient api = new RestClient("http://localhost:8080");
-		List<Item> items = api.getItems();
-		for(Item i: items)
-			System.out.println(i.getName());
-		assertFalse(items.isEmpty());
-		List list = null;
+		List list = api.getItems();
+		assertFalse(list.isEmpty());
+		assertTrue(list.get(0) instanceof Item);
 		list = api.getOrders();
 		assertFalse(list.isEmpty());
+		assertTrue(list.get(0) instanceof Order);
 		list = api.getCustomers();
 		assertFalse(list.isEmpty());
-		System.out.println(api.findOrderByCustomer_Email("dmurphy10@mycit.ie").get(0).getStatus());
+		assertTrue(list.get(0) instanceof Customer);
+		assertTrue(api.findCustomerByName("David") instanceof Customer);
+		assertTrue(api.findItemByName("Daffodil") instanceof Item);
+	}
+	@Test /** DELETES **/
+	public void test03()
+	{
+		RestClient api = new RestClient("http://localhost:8080");
+		api.deleteItemByName("Daffodil");
+		api.deleteItemByName("Hyacinth");
+		assertTrue(api.findItemByName("Daffodil")==null);
+		assertTrue(api.findItemByName("Hyacinth")==null);
+		api.deleteCustomerByEmail("dmurphy10@mycit.ie");
+		assertTrue(api.findCustomerByEmail("dmurphy10@mycit.ie")==null);
+		api.deleteOrderByEmail("dmurphy10@mycit.ie");
+		assertTrue(api.findOrderByCustomer_Email("dmurphy10@mycit.ie").isEmpty());
 	}
 
 }
